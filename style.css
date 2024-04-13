@@ -1,0 +1,82 @@
+body{
+    background-color: burlywood;
+}/*  DEBUT IMAGE LISTE JEUX CARRER */
+.thumbnail img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover; /* Maintient les proportions et remplit l'espace disponible */
+	transition: transform 0.3s ease;
+    border-radius: 20px;
+  }
+
+  
+.container img {
+  max-width: 100%; /* La largeur de l'image ne dépassera pas la largeur du conteneur */
+  max-height: 100%; /* La hauteur de l'image ne dépassera pas la hauteur du conteneur */
+  width: auto; /* L'image s'ajuste de manière proportionnelle */
+  height: auto; /* L'image s'ajuste de manière proportionnelle */
+}
+
+img {
+
+	border-radius: 8px;
+	padding: 3px;
+	}
+
+img:hover {
+	box-shadow: 0 0 3px 3px rgba(194, 236, 87, 0.5);
+	}
+
+	.thumbnails {
+		font-family: "Helvetica";
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 20px;
+	  }
+	  
+	  .thumbnail {
+		position: relative;
+		width: 200px; /* Taille fixe pour toutes les miniatures */
+		height: 200px; /* Taille fixe pour toutes les miniatures */
+		overflow: hidden; /* Cache le dépassement d'image */
+		margin: 29px;
+	  }
+
+	  .overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+		opacity: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: opacity 0.3s ease;
+	  }
+	  
+	  .overlay p {
+		color: white;
+		font-size: 16px;
+		text-align: center;
+	  }
+	  
+	  .thumbnail:hover img {
+		transform: scale(1.1); /* Effet de zoom au survol */
+	  }
+	  
+	  .thumbnail:hover .overlay {
+		opacity: 1; /* Affiche l'overlay au survol */
+	  }
+
+      
+/* FIN IMAGE CARRER */
+
+
+.paragraphenote{
+    font-size: 22px;
+    font-family: Helvetica;
+}
+
